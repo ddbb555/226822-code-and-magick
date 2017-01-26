@@ -44,9 +44,9 @@ window.renderStatistics = function (ctx, names, times) {
     }
 
     ctx.fillRect(histoX + columnIndent * i, 100 + histoHeight - columnHeight, columnWidth, columnHeight);
-    ctx.fillStyle = '#000';
+    ctx.fillStyle = FONT_COLOR;
     ctx.fillText(name, histoX + columnIndent * i, 100 + histoHeight + 20);
-    ctx.fillStyle = '#000';
+    ctx.fillStyle = FONT_COLOR;
     ctx.fillText(Math.floor(time / 10), histoX + columnIndent * i, 90 + histoHeight - columnHeight);
   }
 };
